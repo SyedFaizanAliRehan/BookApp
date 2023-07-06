@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==4.2.3"
+fastapi = "==0.99.1"
+uvicorn = "==0.22.0"
+pydantic = "==2.0"
+sqlalchemy = "*"
+pymysql = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

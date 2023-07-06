@@ -1,0 +1,6 @@
+Django
+fastapi
+uvicorn
+Pydantic
+sqlalchemy
+pymysql
