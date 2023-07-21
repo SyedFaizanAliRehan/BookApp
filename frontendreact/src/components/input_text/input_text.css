@@ -1,0 +1,44 @@
+.input_field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 5vh;
+    font-size: 20px;
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+.input_field label{
+    position: absolute;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-out;
+}
+.input_field input{
+    position: relative;
+    background-color: transparent;
+    outline: 0px;
+    border: hidden;
+    border-bottom: 2px solid;
+    width: auto;
+    height: 100%;
+    color: var(--text-color);
+}
+
+.input_field input:focus ~ label,
+.input_field input:not(:focus):not(:placeholder-shown) ~ label{
+    transform: translateY(-5vh);
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.input_field input::-webkit-input-placeholder{
+    color: transparent;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+input:-webkit-autofill:valid{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    color: white
+}
+

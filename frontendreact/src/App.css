@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #06283d;
+  --secondary-color: #256d85;
+  --teritiary-color: #47b5ff;
+  --fourth-color: #dff6ff;
+  --text-color:black;
+
+}
+.App{
+  padding: 50px;
+}
+
+
